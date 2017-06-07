@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <wicket:enclosure child="message">
+            <p>User ID (token): <strong wicket:id="message"></strong></p>
+        </wicket:enclosure>
+        <div wicket:id="feedback"></div>
+        <form wicket:id="settingsForm" style="margin-bottom: 10px;">
+            <input wicket:id="token" type="text" placeholder="User ID (token)" style="width: 100%;">
+            <button class="btn btn-green">Save Settings</button>
+        </form>
+        <div style="text-align: center;">
+            <wicket:link><a href="HomePage.html" class="btn btn-blue">&laquo; Go Back</a></wicket:link>
+            <a href="#" wicket:id="changeSettings" class="btn btn-green">Change Settings</a>
+            <a href="#" wicket:id="getLists" class="btn btn-green">Get Shopping Lists</a>
+            <a href="#" wicket:id="postLists" class="btn btn-green">Post Shopping Lists</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping List Application</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="app-heading">
+                <h1>Shopping List Application</h1>
+                <select wicket:id="listDDC"></select>
+                <button wicket:id="removeList" class="btn btn-red">Remove List</button>
+                <button wicket:id="addList" class="btn btn-green">Add New List</button>
+                <button wicket:id="synchronizeLists" class="btn btn-yellow float-right">Synchronize Lists</button>
+            </div>
+            <div class="app-body">
+                <table wicket:id="shoppingItemsTable"></table>
+                <div wicket:id="feedback"></div>
+                <form wicket:id="shoppingItemForm">
+                    <input wicket:id="name" type="text" placeholder="New Item Name" style="width: 464px;">
+                    <input wicket:id="quantity" type="text" placeholder="Quantity" style="width: 130px;">
+                    <textarea wicket:id="details" placeholder="Details" style="width: 100%"></textarea>
+                    <button class="btn btn-green float-right">Add Item</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

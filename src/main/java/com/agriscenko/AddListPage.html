@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Shopping List</h1>
+        <div wicket:id="feedback"></div>
+        <form wicket:id="addListForm">
+            <input wicket:id="listName" type="text" placeholder="New Shopping List Name" style="width: 100%">
+            <div style="text-align: center;">
+                <wicket:link><a href="HomePage.html" class="btn btn-blue">&laquo; Go Back</a></wicket:link>
+                <button class="btn btn-green">Add List</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
